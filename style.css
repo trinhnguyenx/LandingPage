@@ -17,14 +17,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navbar-container {
   width: 100vw;
-  padding: 30px;
+  padding: 30px 0 30px 0;
 }
 
 .navbar {
   display: flex;
-  width: 1128px;
   margin: auto;
   justify-content: space-between;
+  padding: 0 100px 0 100px;
 }
 .navbar .right {
   display: flex;
@@ -43,7 +43,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .navbar .left {
   color: rgb(229, 47, 55);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -69,10 +69,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-1 {
-  width: 1128px;
   display: flex;
   margin: auto;
   gap: 60px;
+  padding: 0 100px 0 100px;
 }
 .section-1 .introduce-text {
   padding: 150px 15px 0 0;
@@ -83,12 +83,14 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 35px;
   line-height: 30px;
   text-shadow: 1px 1px #373737;
+  font-weight: 400;
 }
 .section-1 .left.introduce-text .large-text {
   font-size: 45px;
   color: white;
   margin-bottom: 20px;
   text-shadow: 1px 1px #373737;
+  font-weight: 600;
 }
 .section-1 .left.introduce-text .video-text {
   color: white;
@@ -257,6 +259,27 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   margin: 10px 0 5px 0;
   color: #7c8595;
+}
+
+.logo-partners {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 40px 0px;
+}
+.logo-partners .partners {
+  max-height: 55px;
+  color: #7c8595;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+.logo-partners .partners:hover {
+  opacity: 0.9;
+}
+.logo-partners .text-partner {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
