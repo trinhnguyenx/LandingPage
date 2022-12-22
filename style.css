@@ -94,12 +94,58 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white;
   text-decoration: underline;
 }
-.section-1 .left .introduce-text .pop-up-gallery-video {
+.section-1 .pop-up-gallery-video {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section-1 .pop-up-gallery-video .play-btn {
   width: 60px;
   height: 60px;
-  border: 1px solid white;
+  border: 1.5px solid white;
   background-color: white;
   border-radius: 50%;
+  position: relative;
+}
+.section-1 .pop-up-gallery-video .play-btn:hover {
+  background-color: transparent;
+}
+@keyframes changescale {
+  0% {
+    width: 60px;
+    height: 60px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+.section-1 .pop-up-gallery-video .pop-up-overlay {
+  animation: changescale 2s infinite ease;
+}
+.section-1 .pop-up-gallery-video .play-btn .icon-btn-play {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(229, 47, 55);
+}
+.section-1 .pop-up-gallery-video > .play-btn > .icon-btn-play:hover {
+  color: white;
 }
 .section-1 .right.trial-register-form {
   width: 900px;

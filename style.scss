@@ -98,17 +98,59 @@ p, h1, h2, h3, h4, h5, h6 {
         color: white;
         text-decoration: underline;
     }
-    .left .introduce-text .pop-up-gallery-video  {
+    .pop-up-gallery-video {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .pop-up-gallery-video .play-btn  {
         width: 60px;
         height: 60px;
-        border: 1px solid white;
+        border: 1.5px solid white;
         background-color: white;
         border-radius: 50%;
-
-        
+        position: relative;
+        &:hover {
+            background-color: transparent;
+        }
     }
-    .pop-up-gallery-video .play-btn {
-        background-color: red;
+    @keyframes changescale {
+        0% {
+            width: 60px;
+            height: 60px;
+            border: 1.5px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        100% {
+            width: 80px;
+            height: 80px;
+            border: 1.5px solid white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+        }
+    }
+    .pop-up-gallery-video .pop-up-overlay {
+        animation: changescale 2s infinite ease;
+
+}
+    .pop-up-gallery-video .play-btn .icon-btn-play {
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: $PrimaryColor;
+    }
+    .pop-up-gallery-video > .play-btn >.icon-btn-play:hover {
+        color: white;
     }
     .right.trial-register-form {
         width: 900px;
