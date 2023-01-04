@@ -1,4 +1,4 @@
-$PrimaryColor: rgb(229,47,55);
+$PrimaryColor: rgb(229, 47, 55);
 html,body {
     margin: 0;
 }
@@ -39,8 +39,12 @@ p, h1, h2, h3, h4, h5, h6 {
             text-decoration: none;
             color: black;
             font-weight: 500;
+            &:hover {
+                color: $PrimaryColor;
+            }
             
         }
+        
 
     }
     .left {
@@ -57,6 +61,7 @@ p, h1, h2, h3, h4, h5, h6 {
         padding: 14px;
         color: white;
         font-weight: 500;
+        cursor: pointer;
         
         &:hover {
             background-color: white;
@@ -68,11 +73,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .section-1-container {
     width: 100vw;
-    background: url(./img/text-video-login.jpg)top center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./img/text-video-login.jpg);
     background-size: cover;
-    height: 650px;    
-
+    background-repeat: no-repeat;
 }
+
 .section-1 {
     display: flex;
     margin: auto;
@@ -161,6 +166,8 @@ p, h1, h2, h3, h4, h5, h6 {
         background-color: white;
         margin-top: 80px;
         margin-left: 80px;
+        margin-bottom: 100px;
+        border-radius: 5px;
         & div:nth-child(1) {
             font-size: 22px;
             font-weight: 500;
@@ -563,5 +570,151 @@ p, h1, h2, h3, h4, h5, h6 {
         margin-left: 10px;
         border-radius: 8px 8px;
         box-shadow: 10px 12px 40px rgb(0 0 0 / 20%);
+    }
+}
+.section-6-funfact {
+    width: 100%;
+    padding: 100px;
+    background: linear-gradient(rgba(229, 47, 55, 0.9),rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+// .section-6-funfact {
+//     width: 100%;
+//     padding: 100px;
+//     
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+    // .over-delay-funfact {
+    //     width: 100%;
+    //     position: absolute;
+    //     background: $PrimaryColor;
+    //     opacity: 0.95;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    // }
+    .main-funfact-section-6 {
+        width: 100%;
+        .title-funfact {
+            text-align: center;
+            font-size: 38px;
+            color: white;
+            font-family: 'Nunito',sans-serif;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .row-funfact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .funfact {
+                text-align: center;
+                margin: 0 20px;
+                .number-funfact-box {
+                    font-size: 28px;
+                    color: white;
+                    margin-top: 12px;
+                    font-weight: 700;
+                }
+                .text-funfact-box {
+                    color: white;
+                    font-size: 16px;
+                    margin-top: 12px;
+                }
+            }
+            .funfact i  {
+                font-size: 60px;
+                color: white;
+                margin-top: 20px;
+                margin-right: 15px;
+            }
+        }
+    }
+    
+
+}
+.section-7-comments {
+    background-color: #F1FAFF;
+    display: flex;
+    padding: 100px;
+    .left-box-comments {
+        h3 {
+            font-size: 38px;
+            color: #071E55;
+            font-family: 'Nunito',sans-serif;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            max-width: 450px;
+
+
+        }
+        .text-comments-left {
+            font-size: 17px;
+            color: #7c8595;
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+        .assess-comments {
+            display: flex;
+            flex-wrap: wrap;
+            .text-title-assess {
+                margin-bottom: 15px;
+            }
+            .comments-trustpilot {
+                font-size: 17px;
+                color: #071E55;
+                font-weight: 600;
+                padding-right: 20px;
+                border-right: 1px solid #7c8595;
+                 i {
+                    color: #FDCC28;
+                    
+                 }
+            }
+            .commments-freefo {
+                font-size: 17px;
+                color: #071E55;
+                font-weight: 600;
+                padding-left: 20px;
+
+                 i {
+                    color: #FDCC28;
+                    
+                 }
+                 
+            }
+        
+        }
+    }
+    .right-box-commments {
+        width: 500px;
+        margin-left: 200px;
+        .people {
+            margin-bottom: 12px;
+            padding: 30px;
+            border-left: 5px solid #27B36A;
+            background-color: white;
+        }
+        .text-green-comments-right {
+            color: #27B36A;
+            font-weight: 600;
+            .bg-img-say-1 img {
+                border-radius: 50%;
+            }
+            .bg-img-say-2 img {
+                border-radius: 50%;
+
+            }
+            .bg-img-say-3 img {
+                border-radius: 50%;
+
+            }
+        }
+        
+
     }
 }
