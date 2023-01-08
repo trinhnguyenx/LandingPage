@@ -1,16 +1,28 @@
-html, body {
+html,
+body {
   margin: 0;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.element::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 * {
   box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -162,7 +174,8 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: 80px;
   margin-bottom: 100px;
   border-radius: 5px;
-  animation: apearform 1s 1 ease;
+  transition: all 0.6s ease;
+  animation: apearform 1.2s 1 ease;
 }
 .section-1 .right.trial-register-form div:nth-child(1) {
   font-size: 22px;
@@ -240,17 +253,18 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: rgb(229, 47, 55);
   }
   100% {
-    background-color: #27B36A;
+    background-color: #27b36a;
   }
 }
 @keyframes apearform {
   0% {
     transform: scale(0);
-    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1, 1.1);
   }
   100% {
-    transform: scale(1);
-    opacity: 1;
+    transform: scale(1, 1);
   }
 }
 .section-1 .right.trial-register-form input.btn-start-my-free-trial {
@@ -269,7 +283,7 @@ p, h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 .section-1 .right.trial-register-form input.btn-start-my-free-trial:hover {
-  background-color: #27B36A;
+  background-color: #27b36a;
   animation: changecolor 0.5s 1 ease;
 }
 .section-1 .right.trial-register-form .text-regester-last-form {
@@ -301,7 +315,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .section-3 {
   width: 100%;
-  background-color: #F1FAFF;
+  background-color: #f1faff;
   padding: 0 100px 0 100px;
   margin: auto;
 }
@@ -330,7 +344,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .section-3 .main-service .blue-service .fa-chart-bar {
   padding: 16px;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: white;
   border-radius: 20px;
   font-size: 40px;
@@ -363,7 +377,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-3 .main-service .green-service .fa-anchor {
   margin-bottom: 15px;
   padding: 16px;
-  background-color: #27B36A;
+  background-color: #27b36a;
   color: white;
   border-radius: 20px;
   font-size: 40px;
@@ -399,7 +413,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-4 .title-section-4 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #071E55;
+  color: #071e55;
   line-height: 1.2;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
@@ -448,7 +462,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .section-5-profile {
   width: 100%;
-  background-color: #F1FAFF;
+  background-color: #f1faff;
   display: flex;
   justify-content: space-between;
   padding: 100px;
@@ -518,7 +532,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-5-profile .green-profile span {
   position: absolute;
   text-align: center;
-  color: #27B36A;
+  color: #27b36a;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -541,7 +555,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-5-profile .title-profile-left h3 {
   font-size: 21px;
   font-family: "Nunito", sans-serif;
-  color: #071E55;
+  color: #071e55;
   padding-top: 12px;
 }
 .section-5-profile .title-profile-left p {
@@ -605,14 +619,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-7-comments {
-  background-color: #F1FAFF;
+  background-color: #f1faff;
   display: flex;
   justify-content: space-between;
   padding: 100px;
 }
 .section-7-comments .left-box-comments h3 {
   font-size: 38px;
-  color: #071E55;
+  color: #071e55;
   font-family: "Nunito", sans-serif;
   margin-bottom: 20px;
   font-weight: 700;
@@ -634,31 +648,31 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .section-7-comments .left-box-comments .assess-comments .comments-trustpilot {
   font-size: 17px;
-  color: #071E55;
+  color: #071e55;
   font-weight: 600;
   padding-right: 20px;
   border-right: 1px solid #7c8595;
 }
 .section-7-comments .left-box-comments .assess-comments .comments-trustpilot i {
-  color: #FDCC28;
+  color: #fdcc28;
 }
 .section-7-comments .left-box-comments .assess-comments .commments-freefo {
   font-size: 17px;
-  color: #071E55;
+  color: #071e55;
   font-weight: 600;
   padding-left: 20px;
 }
 .section-7-comments .left-box-comments .assess-comments .commments-freefo i {
-  color: #FDCC28;
+  color: #fdcc28;
 }
 .section-7-comments .right-box-commments .people {
   margin-bottom: 12px;
   padding: 40px;
-  border-left: 5px solid #27B36A;
+  border-left: 5px solid #27b36a;
   background-color: white;
 }
 .section-7-comments .right-box-commments .text-green-comments-right {
-  color: #27B36A;
+  color: #27b36a;
   font-weight: 600;
 }
 .section-7-comments .right-box-commments .famous-say-1 {
@@ -711,17 +725,60 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-8 {
-  height: 100px;
+  background-color: white;
+  padding: 100px;
+  width: 100%;
+}
+.section-8 h3 {
+  font-size: 38px;
+  font-family: "Nunito", sans-serif;
+  color: #071e55;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.section-8 p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  color: #7c8595;
+}
+.section-8 .portfolio {
+  display: flex;
+}
+.section-8 .portfolio .portfolio-colomn-1 {
+  display: flex;
+  flex-direction: column;
+}
+.section-8 .portfolio .portfolio-colomn-1 img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 0 5px 0;
+}
+.section-8 .portfolio .portfolio-colomn-2 img {
+  width: 100%;
+  height: auto;
+  padding: 0 10px 0 10px;
+}
+.section-8 .portfolio .portfolio-colomn-3 {
+  display: flex;
+  flex-direction: column;
+}
+.section-8 .portfolio .portfolio-colomn-3 img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 0 5px 0;
 }
 
 .section-9-team {
   padding: 100px;
-  background-color: #F1FAFF;
+  background-color: #f1faff;
 }
 .section-9-team h2 {
   font-size: 38px;
   font-family: "Nunito", sans-serif;
-  color: #071E55;
+  color: #071e55;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -785,7 +842,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .section-9-team .positon-work {
   font-size: 17px;
-  color: #ACACAC;
+  color: #acacac;
   margin-bottom: 20px;
   font-style: italic;
   font-family: "  Open Sans", sans-serif;
@@ -868,7 +925,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 38px;
   text-align: center;
   font-family: "Nunito", sans-serif;
-  color: #071E55;
+  color: #071e55;
   margin-bottom: 10px;
 }
 .section-11 .title-peatures {
@@ -892,7 +949,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-11 .feature h4 {
   font-size: 20px;
   font-family: "Nunito", sans-serif;
-  color: #071E55;
+  color: #071e55;
   margin-bottom: 10px;
 }
 .section-11 .feature p {
@@ -964,7 +1021,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section-12 {
-  background: #F1FAFF;
+  background: #f1faff;
   display: flex;
   justify-content: space-around;
   padding: 100px;
@@ -976,7 +1033,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-12 .column-price-1 h3 {
   font-size: 32px;
   font-family: "Nunito", sans-serif;
-  color: #071E55;
+  color: #071e55;
   margin-bottom: 20px;
 }
 .section-12 .column-price-1 p {
@@ -993,6 +1050,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 50px 0 50px 0;
   box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
   transition: all 0.6s ease;
+  cursor: pointer;
 }
 .section-12 .column-price-2:hover {
   transform: scale(1.05);
@@ -1012,7 +1070,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-12 .column-price-2 p {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #6A6A6A;
+  color: #6a6a6a;
   margin-bottom: 10px;
 }
 .section-12 .column-price-2 .button-price-2 {
@@ -1037,6 +1095,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 8px 8px;
   box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
   transition: all 0.6s ease;
+  cursor: pointer;
 }
 .section-12 .column-price-3:hover {
   transform: scale(1.05);
@@ -1076,6 +1135,189 @@ p, h1, h2, h3, h4, h5, h6 {
 .section-12 .column-price-3 .button-price-3:hover {
   background-color: rgb(229, 47, 55);
   color: white;
+}
+
+.section-13 {
+  width: 100%;
+  padding: 100px;
+}
+.section-13 h3 {
+  font-size: 38px;
+  font-family: "Nunito", sans-serif;
+  color: #071e55;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-left: 10px;
+}
+.section-13 .title-section-13 {
+  font-size: 18px;
+  color: #7c8595;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-left: 25px;
+}
+.section-13 .menu-questions-section-13 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.section-13 .menu-questions-section-13 p {
+  font-size: 17px;
+  color: #7c8595;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+.section-13 .menu-questions-section-13 h5 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #071e55;
+  margin-bottom: 7px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.section-13 .menu-questions-section-13 .question-2 {
+  padding-left: 40px;
+}
+.section-13 .menu-questions-section-13 .question-4 {
+  padding-left: 40px;
+}
+.section-13 .menu-questions-section-13 .question-1 {
+  padding-left: 10px;
+}
+.section-13 .menu-questions-section-13 .question-3 {
+  padding-left: 10px;
+}
+
+.section-14 {
+  width: 100%;
+  background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
+  padding: 100px;
+}
+.section-14 h2 {
+  font-size: 38px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+.section-14 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.section-14 .form-section-14 {
+  text-align: center;
+  padding-top: 50px;
+  transition: all 0.6s ease;
+  animation: apearform 1.5s 1 ease;
+}
+.section-14 .form-section-14 ::placeholder {
+  color: white;
+}
+.section-14 .form-section-14 input:focus {
+  outline: none;
+  color: white;
+}
+.section-14 .form-section-14 select:focus {
+  color: black;
+}
+.section-14 .form-yourname input {
+  padding: 15px 100px 15px 15px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+  border: 2px solid #fff;
+  background-color: rgb(229, 47, 55);
+  font-size: 16px;
+  border-radius: 5px 5px;
+}
+.section-14 .form-email input {
+  padding: 15px 100px 15px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  background-color: rgb(229, 47, 55);
+  font-size: 16px;
+  border-radius: 5px 5px;
+}
+.section-14 .form-phone input {
+  padding: 15px 100px 15px 15px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+  border: 2px solid #fff;
+  background-color: rgb(229, 47, 55);
+  font-size: 16px;
+  border-radius: 5px 5px;
+}
+.section-14 .form-choose select {
+  padding: 15px 165px 15px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  background-color: rgb(229, 47, 55);
+  font-size: 16px;
+  border-radius: 5px 5px;
+  color: white;
+  outline: none;
+}
+.section-14 .form-choose select option {
+  background-color: white;
+}
+.section-14 .form-message input {
+  padding: 15px 443px 120px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  background-color: rgb(229, 47, 55);
+  font-size: 16px;
+  border-radius: 5px 5px;
+}
+.section-14 .btn-submit-section-14 input {
+  padding: 20px 80px;
+  color: rgb(229, 47, 55);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 3px 3px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+}
+.section-14 .btn-submit-section-14 input:hover {
+  background-color: #eaeaea;
+}
+
+.section-15 {
+  padding: 30px 100px;
+}
+.section-15 .menu-section-15 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-15 .menu-section-15 .left-section-15 p {
+  font-size: 17px;
+}
+.section-15 .menu-section-15 .left-section-15 span {
+  color: #454545;
+  font-weight: 600;
+}
+.section-15 .menu-section-15 .left-section-15 a {
+  color: rgb(229, 47, 55);
+  font-weight: 500;
+}
+.section-15 .right-section-15 .right-list-section-15 {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  align-items: center;
+}
+.section-15 .right-section-15 .right-text {
+  font-size: 17px;
+  color: #7c8595;
+}
+.section-15 .right-section-15 iconify-icon {
+  font-size: 28px;
+}
+.section-15 .right-section-15 iconify-icon:hover {
+  color: rgb(229, 47, 55);
 }
 
 /*# sourceMappingURL=style.css.map */
