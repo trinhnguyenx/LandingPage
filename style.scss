@@ -83,17 +83,17 @@ h6 {
     display: none;
   }
 }
- @media (max-width : 990px) {
-      .bar-responsive {
-        display: flex;
-      }
-      .menu a {
-        display: none;
-      }
-      .btn-get-start {
-        display: none;
-      }
+@media (max-width: 990px) {
+  .navbar .bar-responsive {
+    display: flex;
   }
+  .navbar .right .menu a {
+    display: none;
+  }
+  .navbar .btn-get-start {
+    display: none;
+  }
+}
 .section-1-container {
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),

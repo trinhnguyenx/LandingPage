@@ -86,13 +86,13 @@ h6 {
 }
 
 @media (max-width: 990px) {
-  .bar-responsive {
+  .navbar .bar-responsive {
     display: flex;
   }
-  .menu a {
+  .navbar .right .menu a {
     display: none;
   }
-  .btn-get-start {
+  .navbar .btn-get-start {
     display: none;
   }
 }
