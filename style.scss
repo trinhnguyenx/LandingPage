@@ -44,7 +44,6 @@ h6 {
     display: flex;
     list-style: none;
     gap: 20px;
-
     a {
       text-decoration: none;
       color: black;
@@ -75,7 +74,26 @@ h6 {
       color: $PrimaryColor;
     }
   }
+  .bar-responsive  {
+    padding: 7px 17px;
+    border: 1px solid $PrimaryColor;
+    color:$PrimaryColor;
+    border-radius: 8px;
+    font-size: 20px;
+    display: none;
+  }
 }
+ @media (max-width : 990px) {
+      .bar-responsive {
+        display: flex;
+      }
+      .menu a {
+        display: none;
+      }
+      .btn-get-start {
+        display: none;
+      }
+  }
 .section-1-container {
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -733,6 +751,7 @@ h6 {
   background-color: white;
   padding: 100px;
   width: 100%;
+  height: auto;
   h3 {
     font-size: 38px;
     font-family: "Nunito", sans-serif;
@@ -758,12 +777,13 @@ h6 {
       height: auto;
       padding: 0 0 5px 0;
     }
+
   }
   .portfolio-colomn-2 {
     img {
       width: 100%;
-      height: auto;
       padding: 0 10px 0 10px;
+      max-height: 924px;
     }
   }
   .portfolio-colomn-3 {
