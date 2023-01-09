@@ -323,6 +323,7 @@ h6 {
     transition: all 0.3s ease;
     &:hover {
       opacity: 0.9;
+      cursor: pointer;
     }
   }
   .text-partner {
@@ -366,6 +367,7 @@ h6 {
       }
       &:hover {
         transform: scale(1.02);
+        cursor: pointer;
       }
     }
     .pink-service {
@@ -382,6 +384,7 @@ h6 {
       }
       &:hover {
         transform: scale(1.02);
+        cursor: pointer;
       }
     }
     .green-service {
@@ -398,6 +401,7 @@ h6 {
       }
       &:hover {
         transform: scale(1.02);
+        cursor: pointer;
       }
     }
     .large-text-service {

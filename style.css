@@ -326,6 +326,7 @@ h6 {
 }
 .logo-partners .partners:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 .logo-partners .text-partner {
   font-size: 18px;
@@ -371,6 +372,7 @@ h6 {
 }
 .section-3 .main-service .blue-service:hover {
   transform: scale(1.02);
+  cursor: pointer;
 }
 .section-3 .main-service .pink-service {
   text-align: center;
@@ -387,6 +389,7 @@ h6 {
 }
 .section-3 .main-service .pink-service:hover {
   transform: scale(1.02);
+  cursor: pointer;
 }
 .section-3 .main-service .green-service {
   text-align: center;
@@ -403,6 +406,7 @@ h6 {
 }
 .section-3 .main-service .green-service:hover {
   transform: scale(1.02);
+  cursor: pointer;
 }
 .section-3 .main-service .large-text-service {
   margin-bottom: 15px;
