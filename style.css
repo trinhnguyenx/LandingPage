@@ -27,17 +27,25 @@ h6 {
   padding: 0;
 }
 
+.commond-padding {
+  padding: 0 100px;
+}
+
+.padding-100 {
+  padding: 100px;
+}
+
 .navbar-container {
   width: 100vw;
   padding: 30px 0 30px 0;
   background: white;
+  z-index: 1;
 }
 
 .navbar {
   display: flex;
   margin: auto;
   justify-content: space-between;
-  padding: 0 100px 0 100px;
 }
 .navbar .right {
   display: flex;
@@ -100,12 +108,12 @@ h6 {
 
 .section-1 {
   display: flex;
+  align-items: center;
   margin: auto;
   gap: 60px;
-  padding: 0 100px 0 100px;
 }
 .section-1 .introduce-text {
-  padding: 150px 15px 0 0;
+  padding: 0 15px 0 0;
 }
 .section-1 .small-text {
   font-size: 20px;
@@ -179,23 +187,21 @@ h6 {
 .section-1 .pop-up-gallery-video > .play-btn > .icon-btn-play:hover {
   color: white;
 }
-.section-1 .right.trial-register-form {
-  width: 56rem;
-  height: 28rem;
+.section-1 .right {
+  width: 100%;
+  height: 100%;
   padding: 32px;
   background-color: white;
-  margin-top: 80px;
   margin-left: 80px;
-  margin-bottom: 100px;
   border-radius: 5px;
   transition: all 0.6s ease;
   animation: apearform 1.2s 1 ease;
 }
-.section-1 .right.trial-register-form div:nth-child(1) {
+.section-1 .right div:nth-child(1) {
   font-size: 22px;
   font-weight: 500;
 }
-.section-1 .right.trial-register-form div:nth-child(2) {
+.section-1 .right div:nth-child(2) {
   padding-top: 5px;
   font-size: 17px;
   font-weight: 400;
@@ -203,50 +209,50 @@ h6 {
   line-height: 28px;
   color: #7c8595;
 }
-.section-1 .right.trial-register-form .input-container-company-name {
+.section-1 .right .input-container-company-name {
   width: 100%;
   position: relative;
   margin-top: 22px;
 }
-.section-1 .right.trial-register-form .input-container-company-name input {
+.section-1 .right .input-container-company-name input {
   width: 100%;
   padding: 15px;
   padding-left: 40px;
   border: 1px solid #f1f1f1 !important;
   font-size: 15px;
 }
-.section-1 .right.trial-register-form .input-container-company-name .input-icon-company {
+.section-1 .right .input-container-company-name .input-icon-company {
   position: absolute;
   left: 12px;
   top: 8%;
   transform: translateY(-50%);
   font-size: 20px;
 }
-.section-1 .right.trial-register-form .input-container-email-adress {
+.section-1 .right .input-container-email-adress {
   width: 100%;
   position: relative;
   margin-top: 15px;
 }
-.section-1 .right.trial-register-form .input-container-email-adress input {
+.section-1 .right .input-container-email-adress input {
   width: 100%;
   padding: 15px;
   padding-left: 40px;
   border: 1px solid #f1f1f1 !important;
   font-size: 15px;
 }
-.section-1 .right.trial-register-form .input-container-email-adress .input-icon-email {
+.section-1 .right .input-container-email-adress .input-icon-email {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
 }
-.section-1 .right.trial-register-form .input-container-choose-launchpage {
+.section-1 .right .input-container-choose-launchpage {
   width: 100%;
   position: relative;
   margin-top: 15px;
 }
-.section-1 .right.trial-register-form .input-container-choose-launchpage select {
+.section-1 .right .input-container-choose-launchpage select {
   width: 100%;
   padding: 15px;
   padding-left: 36px;
@@ -254,7 +260,7 @@ h6 {
   color: #7c8595;
   font-size: 15px;
 }
-.section-1 .right.trial-register-form .input-container-choose-launchpage .input-icon-select {
+.section-1 .right .input-container-choose-launchpage .input-icon-select {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -281,7 +287,7 @@ h6 {
     transform: scale(1, 1);
   }
 }
-.section-1 .right.trial-register-form input.btn-start-my-free-trial {
+.section-1 .right input.btn-start-my-free-trial {
   margin-top: 15px;
   width: 100%;
   padding: 15px;
@@ -296,11 +302,11 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
-.section-1 .right.trial-register-form input.btn-start-my-free-trial:hover {
+.section-1 .right input.btn-start-my-free-trial:hover {
   background-color: #27b36a;
   animation: changecolor 0.5s 1 ease;
 }
-.section-1 .right.trial-register-form .text-regester-last-form {
+.section-1 .right .text-regester-last-form {
   font-size: 14px;
   margin: 10px 0 5px 0;
   color: #7c8595;
@@ -331,7 +337,6 @@ h6 {
 .section-3 {
   width: 100%;
   background-color: #f1faff;
-  padding: 0 100px 0 100px;
   margin: auto;
 }
 .section-3 .section-3-title {
@@ -417,7 +422,6 @@ h6 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 100px;
   background-color: white;
 }
 .section-4 .section-4-img-left img {
@@ -494,7 +498,6 @@ h6 {
   background-color: #f1faff;
   display: flex;
   justify-content: space-between;
-  padding: 100px;
 }
 .section-5-profile .menu-profile-left {
   padding-right: 60px;
@@ -603,7 +606,6 @@ h6 {
 
 .section-6-funfact {
   width: 100%;
-  padding: 100px;
   background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -652,7 +654,6 @@ h6 {
   background-color: #f1faff;
   display: flex;
   justify-content: space-between;
-  padding: 100px;
 }
 .section-7-comments .left-box-comments {
   padding-top: 100px;
@@ -776,7 +777,6 @@ h6 {
 
 .section-8 {
   background-color: white;
-  padding: 100px;
   width: 100%;
   height: auto;
 }
@@ -1006,7 +1006,6 @@ h6 {
   }
 }
 .section-9-team {
-  padding: 100px;
   background-color: #f1faff;
 }
 .section-9-team h2 {
@@ -1089,7 +1088,6 @@ h6 {
 
 .section-10 {
   width: 100%;
-  padding: 100px;
   background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1153,7 +1151,6 @@ h6 {
 .section-11 {
   width: 100%;
   background-color: white;
-  padding: 100px;
 }
 .section-11 h3 {
   font-size: 38px;
@@ -1176,24 +1173,6 @@ h6 {
   align-items: center;
   transition: all 1 5s ease;
   animation: section-11 5s 1 ease;
-}
-.section-11 .support {
-  animation-delay: 0.4s;
-}
-.section-11 .user {
-  animation-delay: 1s;
-}
-.section-11 .notification {
-  animation-delay: 2s;
-}
-.section-11 .accesibility {
-  animation-delay: 3s;
-}
-.section-11 .cost-control {
-  animation-delay: 4s;
-}
-.section-11 .chat {
-  animation-delay: 5s;
 }
 .section-11 .feature {
   max-width: 70%;
@@ -1278,7 +1257,6 @@ h6 {
   background: #f1faff;
   display: flex;
   justify-content: space-around;
-  padding: 100px;
 }
 .section-12 .column-price-1 {
   padding: 200px 0 200px;
@@ -1393,7 +1371,6 @@ h6 {
 
 .section-13 {
   width: 100%;
-  padding: 100px;
 }
 .section-13 h3 {
   font-size: 38px;
@@ -1445,7 +1422,6 @@ h6 {
 .section-14 {
   width: 100%;
   background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
-  padding: 100px;
 }
 .section-14 h2 {
   font-size: 38px;
@@ -1576,7 +1552,12 @@ h6 {
 
 /* RESPONSIVE */
 /* 1.Navbar */
-@media (max-width: 990px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .commond-padding {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 992px) {
   .navbar .bar-responsive {
     display: flex;
   }
@@ -1588,16 +1569,39 @@ h6 {
   }
 }
 /* 2.section-1 */
-@media (max-width: 750px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .padding-100 {
+    padding: 30px;
+  }
+  .left.introduce-text {
+    padding: 120px 10px 0px 0px;
+  }
+  .large-text {
+    width: 400px;
+  }
+  .section-1 .right {
+    margin-left: 40px;
+    padding: 35px 30px ;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
   .section-1 {
     display: flex;
     flex-direction: column;
   }
-  .section-1 .right.trial-register-form {
-    width: 33rem;
-    height: 32rem;
-    margin: 25px 0 100px 0;
+  .section-1 .right {
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    margin-left: 0;
+  }
+  .section-1 .right .text-regester-last-form {
+    padding-top: 20px;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* section-2 */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .logo-partners {
+  }
+}

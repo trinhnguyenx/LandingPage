@@ -26,17 +26,25 @@ h6 {
   padding: 0;
 }
 
+.commond-padding {
+  padding: 0 100px;
+}
+
+.padding-100 {
+  padding: 100px;
+}
+
 .navbar-container {
   width: 100vw;
   padding: 30px 0 30px 0;
   background: white;
-  
+  z-index: 1;
 }
 .navbar {
   display: flex;
   margin: auto;
   justify-content: space-between;
-  padding: 0 100px 0 100px;
+  
   .right {
     display: flex;
     align-items: center;
@@ -99,11 +107,11 @@ h6 {
 
 .section-1 {
   display: flex;
+  align-items: center;
   margin: auto;
   gap: 60px;
-  padding: 0 100px 0 100px;
   .introduce-text {
-    padding: 150px 15px 0 0;
+    padding: 0 15px 0 0;
   }
   .small-text {
     font-size: 20px;
@@ -177,14 +185,12 @@ h6 {
   .pop-up-gallery-video > .play-btn > .icon-btn-play:hover {
     color: white;
   }
-  .right.trial-register-form {
+  .right  {
     width: 56rem;
     height: 28rem;
     padding: 32px;
     background-color: white;
-    margin-top: 80px;
     margin-left: 80px;
-    margin-bottom: 100px;
     border-radius: 5px;
     transition: all .6s ease;
     animation: apearform 1.2s 1 ease;
@@ -329,7 +335,6 @@ h6 {
 .section-3 {
   width: 100%;
   background-color: #f1faff;
-  padding: 0 100px 0 100px;
   margin: auto;
   .section-3-title {
     text-align: center;
@@ -414,7 +419,6 @@ h6 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 100px;
   background-color: white;
   .section-4-img-left img {
     border-radius: 8px 8px;
@@ -492,7 +496,6 @@ h6 {
   background-color: #f1faff;
   display: flex;
   justify-content: space-between;
-  padding: 100px;
   .menu-profile-left {
     padding-right: 60px;
   }
@@ -602,7 +605,6 @@ h6 {
 }
 .section-6-funfact {
   width: 100%;
-  padding: 100px;
   background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)),
     url(./img/section-6-over-delay.jpg);
   background-repeat: no-repeat;
@@ -652,7 +654,6 @@ h6 {
   background-color: #f1faff;
   display: flex;
   justify-content: space-between;
-  padding: 100px;
   .left-box-comments {
     padding-top: 100px;
     h3 {
@@ -779,7 +780,6 @@ h6 {
 }
 .section-8 {
   background-color: white;
-  padding: 100px;
   width: 100%;
   height: auto;
   h3 {
@@ -1016,7 +1016,7 @@ h6 {
 
 
 .section-9-team {
-  padding: 100px;
+  
   background-color: #f1faff;
   h2 {
     font-size: 38px;
@@ -1104,7 +1104,7 @@ h6 {
 }
 .section-10 {
   width: 100%;
-  padding: 100px;
+  
   background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)),
     url(./img/section-6-over-delay.jpg);
   background-repeat: no-repeat;
@@ -1169,7 +1169,7 @@ h6 {
 .section-11 {
   width: 100%;
   background-color: white;
-  padding: 100px;
+  
   h3 {
     font-size: 38px;
     text-align: center;
@@ -1192,29 +1192,29 @@ h6 {
     transition: all 1 5s ease;
     animation: section-11  5s 1 ease;
   }
-  .support {
-    animation-delay: 0.4s;
-  }
-  .user {
-    animation-delay: 1s;
+  // .support {
+  //   animation-delay: 0.4s;
+  // }
+  // .user {
+  //   animation-delay: 1s;
 
-  }
-  .notification {
-    animation-delay: 2s;
+  // }
+  // .notification {
+  //   animation-delay: 2s;
 
-  }
-  .accesibility {
-    animation-delay: 3s;
+  // }
+  // .accesibility {
+  //   animation-delay: 3s;
 
-  }
-  .cost-control {
-    animation-delay: 4s;
+  // }
+  // .cost-control {
+  //   animation-delay: 4s;
 
-  }
-  .chat {
-    animation-delay: 5s;
+  // }
+  // .chat {
+  //   animation-delay: 5s;
 
-  }
+  // }
   .feature {
     max-width: 70%;
     padding-top: 50px;
@@ -1299,7 +1299,7 @@ h6 {
   background: #f1faff;
   display: flex;
   justify-content: space-around;
-  padding: 100px;
+  
   .column-price-1 {
     padding: 200px 0 200px;
     max-width: 33%;
@@ -1413,7 +1413,7 @@ h6 {
 }
 .section-13 {
   width: 100%;
-  padding: 100px;
+  
   h3 {
     font-size: 38px;
     font-family: "Nunito", sans-serif;
@@ -1467,7 +1467,7 @@ h6 {
   width: 100%;
   background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)),
     url(./img/section-6-over-delay.jpg);
-  padding: 100px;
+  
 
   h2 {
     font-size: 38px;
@@ -1606,7 +1606,12 @@ h6 {
 }
 /* RESPONSIVE */
 /* 1.Navbar */
-@media (max-width: 990px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .commond-padding {
+    padding: 50px;
+  }
+}
+@media (max-width: 992px) {
   .navbar .bar-responsive {
     display: flex;
   }
@@ -1622,10 +1627,21 @@ h6 {
     .section-1 {
       display: flex;
       flex-direction: column;
-        .right.trial-register-form {
+        .right {
           width: 33rem;
           height: 32rem;
           margin: 25px 0 100px 0;
         }
     }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .padding-100 {
+    padding: 30px;
+  }
+  .left.introduce-text {
+    padding: 120px 10px 0px 0px;
+  }
+  .large-text {
+    width: 400px;
+  }
 }
