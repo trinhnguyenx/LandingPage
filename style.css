@@ -30,6 +30,7 @@ h6 {
 .navbar-container {
   width: 100vw;
   padding: 30px 0 30px 0;
+  background: white;
 }
 
 .navbar {
@@ -85,17 +86,11 @@ h6 {
   display: none;
 }
 
-@media (max-width: 990px) {
-  .navbar .bar-responsive {
-    display: flex;
-  }
-  .navbar .right .menu a {
-    display: none;
-  }
-  .navbar .btn-get-start {
-    display: none;
-  }
+.active {
+  color: rgb(229, 47, 55);
+  transition: color 0.5s ease;
 }
+
 .section-1-container {
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/text-video-login.jpg);
@@ -185,8 +180,8 @@ h6 {
   color: white;
 }
 .section-1 .right.trial-register-form {
-  width: 900px;
-  height: 450px;
+  width: 56rem;
+  height: 28rem;
   padding: 32px;
   background-color: white;
   margin-top: 80px;
@@ -428,6 +423,7 @@ h6 {
 .section-4 .section-4-img-left img {
   border-radius: 8px 8px;
   box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
+  animation: img-section-4 0.6s 1 ease;
 }
 .section-4 .section-4-text-right {
   padding-left: 40px;
@@ -483,6 +479,16 @@ h6 {
   box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.8);
 }
 
+@keyframes img-section-4 {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .section-5-profile {
   width: 100%;
   background-color: #f1faff;
@@ -642,10 +648,14 @@ h6 {
 }
 
 .section-7-comments {
+  width: 100%;
   background-color: #f1faff;
   display: flex;
   justify-content: space-between;
   padding: 100px;
+}
+.section-7-comments .left-box-comments {
+  padding-top: 100px;
 }
 .section-7-comments .left-box-comments h3 {
   font-size: 38px;
@@ -654,13 +664,14 @@ h6 {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.2;
-  max-width: 450px;
+  max-width: 400px;
 }
 .section-7-comments .left-box-comments .text-comments-left {
   font-size: 17px;
   color: #7c8595;
   margin-bottom: 20px;
-  max-width: 400px;
+  max-width: 470px;
+  line-height: 1.4;
 }
 .section-7-comments .left-box-comments .assess-comments {
   display: flex;
@@ -690,23 +701,33 @@ h6 {
 }
 .section-7-comments .right-box-commments .people {
   margin-bottom: 12px;
-  padding: 40px;
+  padding: 20px;
   border-left: 5px solid #27b36a;
   background-color: white;
+}
+.section-7-comments .right-box-commments .say-text {
+  font-size: 18px;
+  padding: 0 25px 5px 25px;
+  color: #7c8595;
+  font-style: italic;
 }
 .section-7-comments .right-box-commments .text-green-comments-right {
   color: #27b36a;
   font-weight: 600;
 }
 .section-7-comments .right-box-commments .famous-say-1 {
+  max-width: 540px;
+  height: auto;
+  cursor: pointer;
   position: relative;
 }
 .section-7-comments .right-box-commments .famous-say-1 .text-say-1 {
   margin-left: 80px;
+  padding: 30px;
 }
 .section-7-comments .right-box-commments .famous-say-1 img {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 8%;
   transform: translateY(-50%);
   float: left;
@@ -715,14 +736,17 @@ h6 {
   border-radius: 50%;
 }
 .section-7-comments .right-box-commments .famous-say-2 {
+  max-width: 540px;
+  cursor: pointer;
   position: relative;
 }
 .section-7-comments .right-box-commments .famous-say-2 .text-say-2 {
   margin-left: 80px;
+  padding: 30px;
 }
 .section-7-comments .right-box-commments .famous-say-2 img {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 8%;
   transform: translateY(-50%);
   float: left;
@@ -731,14 +755,17 @@ h6 {
   border-radius: 50%;
 }
 .section-7-comments .right-box-commments .famous-say-3 {
+  max-width: 540px;
+  cursor: pointer;
   position: relative;
 }
 .section-7-comments .right-box-commments .famous-say-3 .text-say-3 {
   margin-left: 80px;
+  padding: 30px;
 }
 .section-7-comments .right-box-commments .famous-say-3 img {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 8%;
   transform: translateY(-50%);
   float: left;
@@ -770,31 +797,214 @@ h6 {
 }
 .section-8 .portfolio {
   display: flex;
+  transition: all 3s ease;
+  animation: section-8 0.6s 1 ease;
 }
 .section-8 .portfolio .portfolio-colomn-1 {
   display: flex;
   flex-direction: column;
 }
-.section-8 .portfolio .portfolio-colomn-1 img {
+.section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 {
+  position: relative;
+  transition: all 0.6s ease;
+}
+.section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1:hover > .icon-overlay-1 {
+  opacity: 1;
+  cursor: pointer;
+}
+.section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 img {
+  max-width: 100%;
+  height: 100%;
+  padding: 0 0 5px 0;
+  transition: all 0.6s ease;
+}
+.section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 .icon-overlay-1 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 .background-overlay-1 {
+  width: 92%;
+  height: 92%;
+  position: absolute;
+  transform: translate(4%, -107%);
+  background-color: rgb(229, 47, 55);
+  transition: all ease 0.6s;
+  opacity: 0;
+}
+.section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 .background-overlay-1:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.section-8 .portfolio .img-portfolio-2 {
+  position: relative;
+  transition: all 0.6s ease;
+}
+.section-8 .portfolio .img-portfolio-2:hover > .icon-overlay-2 {
+  opacity: 1;
+  cursor: pointer;
+}
+.section-8 .portfolio img {
   max-width: 100%;
   height: auto;
   padding: 0 0 5px 0;
+  transition: all 0.6s ease;
 }
-.section-8 .portfolio .portfolio-colomn-2 img {
+.section-8 .portfolio img:hover {
+  opacity: 0.4;
+}
+.section-8 .portfolio .icon-overlay-2 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.section-8 .portfolio .background-overlay-2 {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  transform: translate(5%, -118%);
+  background-color: rgb(229, 47, 55);
+  transition: all ease 0.6s;
+  opacity: 0;
+}
+.section-8 .portfolio .background-overlay-2:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.portfolio-colomn-2 .img-portfolio-3 {
+  position: relative;
+  transition: all 0.6s ease;
+}
+.portfolio-colomn-2 .img-portfolio-3:hover > .icon-overlay-3 {
+  opacity: 1;
+}
+.portfolio-colomn-2 .img-portfolio-3 img {
   width: 100%;
   padding: 0 10px 0 10px;
   max-height: 924px;
 }
-.section-8 .portfolio .portfolio-colomn-3 {
+.portfolio-colomn-2 .img-portfolio-3 .icon-overlay-3 {
+  position: absolute;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+}
+.portfolio-colomn-2 .img-portfolio-3 .background-overlay-3 {
+  position: absolute;
+  width: 88%;
+  height: 90%;
+  transform: translate(7%, -107%);
+  background-color: rgb(229, 47, 55);
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.portfolio-colomn-2 .img-portfolio-3 .background-overlay-3:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.portfolio-colomn-3 {
   display: flex;
   flex-direction: column;
 }
-.section-8 .portfolio .portfolio-colomn-3 img {
+.portfolio-colomn-3 .img-portfolio-4 {
+  position: relative;
+  transition: all 0.6s ease;
+}
+.portfolio-colomn-3 .img-portfolio-4:hover > .icon-overlay-4 {
+  opacity: 1;
+}
+.portfolio-colomn-3 .img-portfolio-4 img {
   max-width: 100%;
   height: auto;
   padding: 0 0 5px 0;
 }
+.portfolio-colomn-3 .img-portfolio-4 img:hover {
+  opacity: 0.4;
+}
+.portfolio-colomn-3 .img-portfolio-4 .icon-overlay-4 {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.portfolio-colomn-3 .img-portfolio-4 .background-overlay-4 {
+  position: absolute;
+  width: 90%;
+  height: 85%;
+  transform: translate(5%, -110%);
+  background-color: rgb(229, 47, 55);
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.portfolio-colomn-3 .img-portfolio-4 .background-overlay-4:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.portfolio-colomn-3 .img-portfolio-5 {
+  position: relative;
+  transition: all 0.6s ease;
+}
+.portfolio-colomn-3 .img-portfolio-5:hover > .icon-overlay-5 {
+  opacity: 1;
+}
+.portfolio-colomn-3 .img-portfolio-5 img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 0 5px 0;
+}
+.portfolio-colomn-3 .img-portfolio-5 img:hover {
+  opacity: 0.4;
+}
+.portfolio-colomn-3 .img-portfolio-5 .icon-overlay-5 {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.portfolio-colomn-3 .img-portfolio-5 .background-overlay-5 {
+  position: absolute;
+  width: 90%;
+  height: 85%;
+  transform: translate(5%, -110%);
+  background-color: rgb(229, 47, 55);
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.portfolio-colomn-3 .img-portfolio-5 .background-overlay-5:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 
+@keyframes section-8 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section-9-team {
   padding: 100px;
   background-color: #f1faff;
@@ -964,6 +1174,26 @@ h6 {
   grid-template-columns: auto auto auto;
   justify-items: center;
   align-items: center;
+  transition: all 1 5s ease;
+  animation: section-11 5s 1 ease;
+}
+.section-11 .support {
+  animation-delay: 0.4s;
+}
+.section-11 .user {
+  animation-delay: 1s;
+}
+.section-11 .notification {
+  animation-delay: 2s;
+}
+.section-11 .accesibility {
+  animation-delay: 3s;
+}
+.section-11 .cost-control {
+  animation-delay: 4s;
+}
+.section-11 .chat {
+  animation-delay: 5s;
 }
 .section-11 .feature {
   max-width: 70%;
@@ -1342,6 +1572,32 @@ h6 {
 }
 .section-15 .right-section-15 iconify-icon:hover {
   color: rgb(229, 47, 55);
+}
+
+/* RESPONSIVE */
+/* 1.Navbar */
+@media (max-width: 990px) {
+  .navbar .bar-responsive {
+    display: flex;
+  }
+  .navbar .right .menu a {
+    display: none;
+  }
+  .navbar .btn-get-start {
+    display: none;
+  }
+}
+/* 2.section-1 */
+@media (max-width: 750px) {
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-1 .right.trial-register-form {
+    width: 33rem;
+    height: 32rem;
+    margin: 25px 0 100px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

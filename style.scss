@@ -29,6 +29,8 @@ h6 {
 .navbar-container {
   width: 100vw;
   padding: 30px 0 30px 0;
+  background: white;
+  
 }
 .navbar {
   display: flex;
@@ -83,16 +85,9 @@ h6 {
     display: none;
   }
 }
-@media (max-width: 990px) {
-  .navbar .bar-responsive {
-    display: flex;
-  }
-  .navbar .right .menu a {
-    display: none;
-  }
-  .navbar .btn-get-start {
-    display: none;
-  }
+.active {
+  color: $PrimaryColor;
+  transition: color 0.5s ease;
 }
 .section-1-container {
   width: 100vw;
@@ -183,8 +178,8 @@ h6 {
     color: white;
   }
   .right.trial-register-form {
-    width: 900px;
-    height: 450px;
+    width: 56rem;
+    height: 28rem;
     padding: 32px;
     background-color: white;
     margin-top: 80px;
@@ -424,6 +419,7 @@ h6 {
   .section-4-img-left img {
     border-radius: 8px 8px;
     box-shadow: 10px 12px 40px rgb(0 0 0 / 20%);
+    animation: img-section-4  .6s  1  ease ;
   }
   .section-4-text-right {
     padding-left: 40px;
@@ -479,6 +475,16 @@ h6 {
     &:hover {
       box-shadow: 0px 4px 10px 0 rgb(0 0 0 / 80%);
     }
+  }
+}
+@keyframes img-section-4 {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 .section-5-profile {
@@ -642,11 +648,13 @@ h6 {
   }
 }
 .section-7-comments {
+  width: 100%;
   background-color: #f1faff;
   display: flex;
   justify-content: space-between;
   padding: 100px;
   .left-box-comments {
+    padding-top: 100px;
     h3 {
       font-size: 38px;
       color: #071e55;
@@ -654,13 +662,15 @@ h6 {
       margin-bottom: 20px;
       font-weight: 700;
       line-height: 1.2;
-      max-width: 450px;
+      max-width: 400px;
+
     }
     .text-comments-left {
       font-size: 17px;
       color: #7c8595;
       margin-bottom: 20px;
-      max-width: 400px;
+      max-width: 470px;
+      line-height: 1.4;
     }
     .assess-comments {
       display: flex;
@@ -693,22 +703,32 @@ h6 {
   .right-box-commments {
     .people {
       margin-bottom: 12px;
-      padding: 40px;
+      padding: 20px;
       border-left: 5px solid #27b36a;
       background-color: white;
+    }
+    .say-text {
+      font-size: 18px;
+      padding: 0 25px 5px 25px;
+      color:#7c8595;
+      font-style: italic;
     }
     .text-green-comments-right {
       color: #27b36a;
       font-weight: 600;
     }
     .famous-say-1 {
+      max-width: 540px;
+      height: auto;
+      cursor: pointer;
       .text-say-1 {
         margin-left: 80px;
+        padding: 30px;
       }
       position: relative;
       img {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 8%;
         transform: translateY(-50%);
         float: left;
@@ -718,13 +738,16 @@ h6 {
       }
     }
     .famous-say-2 {
+      max-width: 540px;
+      cursor: pointer;
       .text-say-2 {
         margin-left: 80px;
+        padding: 30px;
       }
       position: relative;
       img {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 8%;
         transform: translateY(-50%);
         float: left;
@@ -734,13 +757,16 @@ h6 {
       }
     }
     .famous-say-3 {
+      max-width: 540px;
+      cursor: pointer;
       .text-say-3 {
         margin-left: 80px;
+        padding: 30px;
       }
       position: relative;
       img {
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 8%;
         transform: translateY(-50%);
         float: left;
@@ -773,34 +799,222 @@ h6 {
   }
   .portfolio {
     display: flex;
+    transition: all 3s ease;
+    animation: section-8  .6s 1 ease;
   .portfolio-colomn-1 {
     display: flex;
     flex-direction: column;
-    img {
-      max-width: 100%;
-      height: auto;
-      padding: 0 0 5px 0;
+      .img-portfolio-1 {
+        position: relative;
+        transition: all .6s ease;
+        &:hover > .icon-overlay-1  {
+          opacity: 1;
+          cursor: pointer;
+        }
+        img {
+          max-width: 100%;
+          height: 100%;
+          padding: 0 0 5px 0;
+          transition: all .6s ease;
+        }
+        .icon-overlay-1 {
+          font-size: 40px;
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          opacity: 0;
+        }
+        .background-overlay-1 {
+          width: 92%;
+          height: 92%;
+          position: absolute;
+          transform: translate(4%,-107%);
+          background-color: $PrimaryColor;
+          transition: all ease .6s;
+          opacity: 0;
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
     }
+      .img-portfolio-2 {
+        position: relative;
+        transition: all .6s ease;
+        &:hover > .icon-overlay-2 {
+          opacity: 1;
+          cursor: pointer;
+        }
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+          padding: 0 0 5px 0;
+        transition: all .6s ease;
+          &:hover {
+            opacity: 0.4;
+          }
+        }
+        .icon-overlay-2 {
+          font-size: 40px;
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          opacity: 0;
 
+        }
+        .background-overlay-2 {
+          position: absolute;
+          width: 90%;
+          height: 80%;
+          transform: translate(5%,-118%);
+          background-color: $PrimaryColor;
+          transition: all ease .6s;
+          opacity: 0;
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
   }
   .portfolio-colomn-2 {
-    img {
-      width: 100%;
-      padding: 0 10px 0 10px;
-      max-height: 924px;
+    .img-portfolio-3 {
+      position: relative;
+      transition: all .6s ease;
+      &:hover > .icon-overlay-3 {
+        opacity: 1;
+      }
+      img {
+        width: 100%;
+        padding: 0 10px 0 10px;
+        max-height: 924px;
+      }
+      .icon-overlay-3 {
+        position: absolute;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        opacity:0;
+  
+      }
+      .background-overlay-3 {
+        position: absolute;
+        width: 88%;
+        height: 90%;
+        transform: translate(7%,-107%);
+        background-color: $PrimaryColor;
+        transition: all ease .3s;
+        opacity: 0;
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
     }
+   
   }
   .portfolio-colomn-3 {
     display: flex;
     flex-direction: column;
-    img {
-      max-width: 100%;
-      height: auto;
-      padding: 0 0 5px 0;
+    .img-portfolio-4 {
+      position: relative;
+      transition: all .6s ease;
+      &:hover > .icon-overlay-4 {
+        opacity: 1;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 0 0 5px 0;
+        &:hover {
+          opacity: 0.4;
+        }
+      }
+      .icon-overlay-4 {
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+  
+      }
+      .background-overlay-4 {
+        position: absolute;
+        width: 90%;
+        height: 85%;
+        transform: translate(5%,-110%);
+        background-color: $PrimaryColor;
+        transition: all ease .3s;
+        opacity: 0;
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+    }
+    .img-portfolio-5 {
+      position: relative;
+      transition: all .6s ease;
+      &:hover > .icon-overlay-5{
+        opacity: 1;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 0 0 5px 0;
+        &:hover {
+          opacity: 0.4;
+        }
+      }
+      .icon-overlay-5 {
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+  
+      }
+      .background-overlay-5 {
+        position: absolute;
+        width: 90%;
+        height: 85%;
+        transform: translate(5%,-110%);
+        background-color: $PrimaryColor;
+        transition: all ease .3s;
+        opacity: 0;
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    
+  @keyframes section-8 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
-}
-}
+
+
 .section-9-team {
   padding: 100px;
   background-color: #f1faff;
@@ -975,6 +1189,31 @@ h6 {
     grid-template-columns: auto auto auto;
     justify-items: center;
     align-items: center;
+    transition: all 1 5s ease;
+    animation: section-11  5s 1 ease;
+  }
+  .support {
+    animation-delay: 0.4s;
+  }
+  .user {
+    animation-delay: 1s;
+
+  }
+  .notification {
+    animation-delay: 2s;
+
+  }
+  .accesibility {
+    animation-delay: 3s;
+
+  }
+  .cost-control {
+    animation-delay: 4s;
+
+  }
+  .chat {
+    animation-delay: 5s;
+
   }
   .feature {
     max-width: 70%;
@@ -1055,6 +1294,7 @@ h6 {
     }
   }
 }
+
 .section-12 {
   background: #f1faff;
   display: flex;
@@ -1362,5 +1602,30 @@ h6 {
         }
       }
       
+    }
+}
+/* RESPONSIVE */
+/* 1.Navbar */
+@media (max-width: 990px) {
+  .navbar .bar-responsive {
+    display: flex;
+  }
+  .navbar .right .menu a {
+    display: none;
+  }
+  .navbar .btn-get-start {
+    display: none;
+  }
+}
+/* 2.section-1 */
+@media (max-width: 750px) {
+    .section-1 {
+      display: flex;
+      flex-direction: column;
+        .right.trial-register-form {
+          width: 33rem;
+          height: 32rem;
+          margin: 25px 0 100px 0;
+        }
     }
 }
