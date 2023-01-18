@@ -21,7 +21,7 @@
             <li><a class="items-link" href="#testimonials"> Testimonials </a></li>
             <li><a class="items-link" href="#work"> Work </a></li>
             <li><a class="items-link" href="#team"> Team </a></li>
-            <li><a class="items-link" href="#features"> Features </a></li>
+            <li><a class="items-link" href="#feature"> Features </a></li>
             <li><a class="items-link" href="#pricing"> Pricing </a></li>
           </ul>
           <div class="btn btn-get-start">Get Started</div>
@@ -31,8 +31,8 @@
         </div>
       </div>
     </section>
-    <section class="section-1-container padding-100">
-      <div class="section-1">
+    <section class="section-1-container padding-100" id="home">
+      <div class="section-1" >
         <div class="left introduce-text">
           <div class="large-text">Award-Winning Agency Based In Manchested</div>
           <div class="small-text">
@@ -45,6 +45,10 @@
               <a class="play-btn" href="#" target="_blank"><iconify-icon class="icon-btn-play" icon="ic:baseline-play-arrow"></iconify-icon>
                 <div class="pop-up-overlay"></div>
               </a>
+              <!-- <div class="video__modal">
+                <span class="close">&#10006;</span>
+                <iframe src="https://youtube.com/embed/FPfQMVf4vwQ"></iframe>
+            </div> -->
               <span class="video-text"> Watch Presentation Video</span>
           </div>
         </div>
@@ -77,15 +81,15 @@
       </div>
     </div>
     </section>
-    <section class="logo-partners section-2 padding-100">
+    <section class="logo-partners section-2 padding-100"  >
       <p class="text-partner">As featured in:</p>
       <image src="./img/partner1.png" alt="#" class="partners"></image>
       <image src="./img/partner2.png" alt="#" class="partners"></image>
       <image src="./img/partner3.png" alt="#" class="partners"></image>
       <image src="./img/partner4.png" alt="#" class="partners"></image>
     </section>
-    <section class="section-3 padding-100">
-      <div class="section-3-title">
+    <section class="section-3 padding-100" id="about">
+      <div class="section-3-title" >
         <h3>What We Do</h3>
         <p>Dicover how our amazing team can help your business.</p>
       </div>
@@ -134,9 +138,10 @@
                   <p class="tick-text">Enim ipsam netus voluptatem quia voluptas.</p>
                   </div>
                   <!--  -->
-          </div>
-          <button class="btn-section-4">Discover More</button>
+                  <button class="btn-section-4">Discover More</button>
             </div>
+          </div>
+          
         <!--  -->
     </section>
       <section class="section-5-profile padding-100">
@@ -144,7 +149,7 @@
         <div class="menu-profile">
           <div class="menu-profile-left">
             <!--  -->
-            <div class="blue-profile">
+            <div class="blue-profile button-left bg-white">
                  <span><iconify-icon class ="icon-blue-profile" icon="ph:chart-line-up-bold"></iconify-icon></span>
                   <div class="title-profile-left">
                 <h3>Customize your workflow.</h3>
@@ -152,7 +157,7 @@
                   </div>
             </div>
             <!--  -->
-            <div class="pink-profile">
+            <div class="pink-profile button-left">
               <span><i class="fa-solid fa-network-wired"></i></span>
                  <div class="title-profile-left">
                  <h3>Easy onboarding, fast adoption.</h3>
@@ -160,7 +165,7 @@
                 </div>
             </div>
             <!--  -->
-            <div class="green-profile">
+            <div class="green-profile button-left">
               <span><i class="fa-solid fa-rocket"></i></span>
                 <div class="title-profile-left">
                   <h3>Improve subscriber retention.</h3>
@@ -173,7 +178,15 @@
             <!-- left -->
             <!-- right -->
             <div class="img-profile-right">
+              <div class="img-right">
               <img src="./img/section-5-profile.jpg" alt="anh">
+              </div>
+              <div class="img-right hide">
+                <img src="./img/section-5-img-1.jpg" alt="anh">
+              </div>
+              <div class="img-right hide">
+                <img src="./img/section-5-img-2.jpg" alt="anh">
+              </div>
             </div>
             <!-- right -->
     </section>
@@ -209,7 +222,7 @@
         </div>
         </div>
       </section>
-      <section class="section-7-comments padding-100">
+      <section class="section-7-comments padding-100" id="testimonials">
         <div class="left-box-comments">
           <h3>What People Are Saying.</h3>
           <p class="text-comments-left">Quis autem velis ets reprehender net etid quiste nets voluptate. Utise wisi enim minim veniam, quis etsad aspernatis netsum stationes nets.</p>
@@ -233,11 +246,11 @@
               </div>
         </div>
         <div class="right-box-commments">
-          <div class="famous-say-1 people">
-            <div class="say-text">
+          <div class="famous-say-1 people ">
+            <p class="say-text">
               Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.
-              </div>
-            <img src="./img/section7-1.jpg"></img>
+              </p>
+             <img src="./img/section7-1.jpg"></img>
             <div class="text-say-1">
               <span>Alexandra Smith / </span>
               <span class="text-green-comments-right">Manager - SmartCoders</span>
@@ -245,10 +258,10 @@
             <!--  -->
           </div>
           <div class="famous-say-2 people">
-            <div class="say-text">
+            <p class="say-text">
               Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.
-              </div>
-            <img src="./img/dection7-2.jpg" alt="#"></img>
+              </p>
+              <img src="./img/dection7-2.jpg" alt="#"></img>
             <div class="text-say-2">
               <span>Jone Doe / </span>
               <span class="text-green-comments-right">CEO - Epic Design</span>
@@ -256,9 +269,9 @@
             </div>
             <!--  -->
           <div class="famous-say-3 people">
-            <div class="say-text">
+            <p class="say-text">
               Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.
-              </div>
+              </p>
             <img src="./img/section7-3.jpg" alt="#"></img>
             <div class="text-say-3">
               <span>Christina Pages /</span>
@@ -268,7 +281,7 @@
         </div>
       </div>
       </section>
-      <section class="section-8 padding-100">
+      <section class="section-8 padding-100" id="work">
         <h3>Our Portfolio</h3>
         <p>Dicover the latest projects accomplished for my clients.</p>
         <div class="portfolio">
@@ -276,19 +289,21 @@
 
           <span class="portfolio-colomn-1">
             <!--  -->
-            <div class="img-portfolio-1">
-            <img src="./img/section8-1.jpg" alt="pic"><img>
-              <div class="background-overlay-1"></div>
-              <div class="icon-overlay-1">
-                <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <div class="img-portfolio-1 preview-gallery">
+            <img class="preview-gallery-img" src="./img/section8-1.jpg" alt="pic"><img>
+              <div class="background-overlay-1">
+                <div class="icon-overlay-1">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
               </div>
             </div>
             <!--  -->
-            <div class="img-portfolio-2"> 
-              <img src="./img/section8-2.jpg" alt="pic"> <img>
-              <div class="background-overlay-2"></div>
-              <div class="icon-overlay-2">
-                <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <div class="img-portfolio-2 preview-gallery"> 
+              <img class="preview-gallery-img" src="./img/section8-2.jpg" alt="pic"> <img>
+              <div class="background-overlay-2">
+                <div class="icon-overlay-2">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
               </div>
             </div>
             <!--  -->
@@ -297,59 +312,80 @@
 
           <span class="portfolio-colomn-2">
             <!--  -->
-            <div class="img-portfolio-3"> 
-              <img src="./img/section8-3.jpg" alt="pic" ><img>
-              <div class="background-overlay-3"></div>
-              <div class="icon-overlay-3">
-                <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <div class="img-portfolio-3 preview-gallery"> 
+              <img class="preview-gallery-img" src="./img/section8-3.jpg" alt="pic" ><img>
+              <div class="background-overlay-3">
+                <div class="icon-overlay-3">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
               </div>
+              
             </div>
             <!--  -->
           </span>
           <!--  -->
           <span class="portfolio-colomn-3">
-            <div class="img-portfolio-4">
-              <img src="./img/dection8-4.jpg" alt="pic"><img>
-                <div class="background-overlay-4"></div>
+            <div class="img-portfolio-4 preview-gallery">
+              <img class="preview-gallery-img" src="./img/dection8-4.jpg" alt="pic"><img>
+                <div class="background-overlay-4">
                   <div class="icon-overlay-4">
                     <i class="fa-solid fa-magnifying-glass-plus"></i>
                     </div>
+                </div>
+                  
             </div>
             
-            <div class="img-portfolio-5">
-              <img src="./img/section8-5.jpg" alt="pic"><img>
-                <div class="background-overlay-5"></div>
+            <div class="img-portfolio-5 preview-gallery">
+              <img class="preview-gallery-img" src="./img/section8-5.jpg" alt="pic"><img>
+                <div class="background-overlay-5">
                   <div class="icon-overlay-5">
-                  <i class="fa-solid fa-magnifying-glass-plus"></i>
-                  </div>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </div>
+                </div>
+                  
             </div>
             
         </span>
         </div>
+        <div class="preview">
+          <button class="prev btn-icon"> 
+              <iconify-icon icon="material-symbols:arrow-left"></iconify-icon>
+          </button>
+          <div class="preview-img">
+              <button class="preview-btn">
+                  <iconify-icon icon="material-symbols:close"></iconify-icon>
+              </button>
+              <img src="" alt="">
+              <p> <span class="peview-counter">1</span> of 5 </p>
+          </div>
+          <button class="next btn-icon">
+              <iconify-icon icon="material-symbols:arrow-right"></iconify-icon>
+          </button>
+      </div>
       </section>
-      <section class="section-9-team padding-100">
+      <section class="section-9-team padding-100" id="team">
         <h2>Meet Out Team</h2>
         <p class="title-team">Discover more about our high performing team.</p>
         <div class="menu-member">
-          <div class="member-first">
-            <img src="./img/section9-1.jpg" alt="#" class="img-member"><img>
-            <div class="text-member-1">
+          <div class="member-first img-member co-md4">
+            <img src="./img/section9-1.jpg" alt="#" ><img>
+            <div class="text-member-1 co-md4">
             <h3 class="name-member">CHRISTINA HAWKINS</h3>
             <p class="positon-work">Head of SEO</p>
             <p class="introduce-member">Johnathan is our co-founder and has developed search strategies for a variety of clients for over 5 years.</p>
             </div>
           </div>
-          <div class="member-second">
-            <img src="./img/section9-2.jpg" alt="#" class="img-member"><img>
-            <div class="text-member-2">
+          <div class="member-second img-member co-md4">
+            <img src="./img/section9-2.jpg" alt="#" ><img>
+            <div class="text-member-2 co-md4">
             <h3 class="name-member">ANDRES JOHANSON</h3>
             <p class="positon-work">Marketing Manager</p>
             <p class="introduce-member">Andres fell in love with marketing at the school and looks forward to being part of the industry for years.</p>
             </div>
           </div>
-          <div class="member-third">
-            <img src="./img/section9-3.jpg" alt="#" class="img-member"><img>
-            <div class="text-member-3">
+          <div class="member-third img-member co-md4">
+            <img src="./img/section9-3.jpg" alt="#" ><img>
+            <div class="text-member-3 co-md4">
             <h3 class="name-member">ALEXANDRA SMITHS</h3>
             <p class="positon-work">SEO Specialist</p>
             <p class="introduce-member">Graduating with a degree in Spanish, English and French, she has always loved writing.</p>
@@ -365,7 +401,7 @@
           <a class="button-touch">Get In Touch</a>
         </div>
       </section>
-    <section class="section-11 padding-100">
+    <section class="section-11 padding-100" id="feature">
       <h3>Amazing Features</h3>
       <p class="title-peatures">Quis autem velis ets reprehender net etid quiste voluptate.</p>
     <div class="menu-features">
@@ -401,7 +437,7 @@
       </div>
     </div>
   </section>
-  <section class="section-12 padding-100">
+  <section class="section-12 padding-100" id="pricing">
     <div class="column-price-1">
       <h3>Great pricing plans tailored to your needs.</h3>
       <p>Quis autem velis ets reprehender net etid quiste voluptate. Utise wisi enim minim veniam, quis et stationes nets.</p>

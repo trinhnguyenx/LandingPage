@@ -800,14 +800,14 @@ h6 {
   .portfolio {
     display: flex;
     transition: all 3s ease;
-    animation: section-8  .6s 1 ease;
+    animation: section-8  1.6s 1 ease;
   .portfolio-colomn-1 {
     display: flex;
     flex-direction: column;
       .img-portfolio-1 {
         position: relative;
         transition: all .6s ease;
-        &:hover > .icon-overlay-1  {
+        &:hover > .background-overlay-1 > .icon-overlay-1  {
           opacity: 1;
           cursor: pointer;
         }
@@ -844,7 +844,7 @@ h6 {
       .img-portfolio-2 {
         position: relative;
         transition: all .6s ease;
-        &:hover > .icon-overlay-2 {
+        &:hover > .background-overlay-2 > .icon-overlay-2 {
           opacity: 1;
           cursor: pointer;
         }
@@ -887,7 +887,7 @@ h6 {
     .img-portfolio-3 {
       position: relative;
       transition: all .6s ease;
-      &:hover > .icon-overlay-3 {
+      &:hover > .background-overlay-3 > .icon-overlay-3 {
         opacity: 1;
       }
       img {
@@ -928,8 +928,9 @@ h6 {
     .img-portfolio-4 {
       position: relative;
       transition: all .6s ease;
-      &:hover > .icon-overlay-4 {
+      &:hover > .background-overlay-4 > .icon-overlay-4 {
         opacity: 1;
+        cursor: pointer;
       }
       img {
         max-width: 100%;
@@ -967,7 +968,7 @@ h6 {
     .img-portfolio-5 {
       position: relative;
       transition: all .6s ease;
-      &:hover > .icon-overlay-5{
+      &:hover > .background-overlay-5> .icon-overlay-5  {
         opacity: 1;
       }
       img {
