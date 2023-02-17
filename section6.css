@@ -1,0 +1,44 @@
+.section-6-funfact {
+    width: 100%;
+    background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .section-6-funfact .main-funfact-section-6 {
+    width: 100%;
+  }
+  .section-6-funfact .main-funfact-section-6 .title-funfact {
+    text-align: center;
+    font-size: 38px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .section-6-funfact .main-funfact-section-6 .row-funfact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-6-funfact .main-funfact-section-6 .row-funfact .funfact {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .section-6-funfact .main-funfact-section-6 .row-funfact .funfact .number-funfact-box {
+    font-size: 28px;
+    color: white;
+    margin-top: 12px;
+    font-weight: 700;
+  }
+  .section-6-funfact .main-funfact-section-6 .row-funfact .funfact .text-funfact-box {
+    color: white;
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  .section-6-funfact .main-funfact-section-6 .row-funfact .funfact i {
+    font-size: 60px;
+    color: white;
+    margin-top: 20px;
+    margin-right: 15px;
+  }

@@ -1,0 +1,132 @@
+.section-12 {
+    background: #f1faff;
+    display: flex;
+    justify-content: space-around;
+  }
+  .section-12 .column-price-1 {
+    padding: 200px 0 200px;
+    max-width: 33%;
+  }
+  .section-12 .column-price-1 h3 {
+    font-size: 32px;
+    font-family: "Nunito", sans-serif;
+    color: #071e55;
+    margin-bottom: 20px;
+  }
+  .section-12 .column-price-1 p {
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    color: #7c8595;
+  }
+  .section-12 .column-price-2 {
+    max-height: 420px;
+    padding: 40px 70px ;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px 8px;
+    margin: 50px 0 50px 0;
+    box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease;
+    cursor: pointer;
+    animation: section12 1s 1 ease;
+  }
+  .section-12 .column-price-2:hover {
+    transform: scale(1.05);
+  }
+  .section-12 .column-price-2 h4 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #292929;
+    text-transform: uppercase;
+  }
+  .section-12 .column-price-2 h1 {
+    font-size: 70px;
+    font-family: "Roboto", sans-serif;
+    color: #292929;
+    margin: 20px 0 10px;
+  }
+  .section-12 .column-price-2 p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #6a6a6a;
+    margin-bottom: 10px;
+  }
+  .section-12 .column-price-2 .button-price-2 {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    margin: 40px 0 50px 0;
+    border: 1px solid white;
+    color: rgb(229, 47, 55);
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.6s ease;
+  }
+  .section-12 .column-price-2 .button-price-2:hover {
+    color: white;
+  }
+  .section-12 .column-price-3 {
+    max-height: 500px;
+    padding: 40px 70px ;
+    background-color: rgb(229, 47, 55);
+    text-align: center;
+    border-radius: 8px 8px;
+    box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s ease;
+    cursor: pointer;
+    animation: section12 1s 1 ease;
+    animation-delay: .9s;
+  }
+  .section-12 .column-price-3:hover {
+    transform: scale(1.05);
+  }
+  .section-12 .column-price-3 h4 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-transform: uppercase;
+  }
+  .section-12 .column-price-3 h1 {
+    font-size: 70px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    margin: 20px 0 10px;
+  }
+  .section-12 .column-price-3 p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .section-12 .column-price-3 .button-price-3 {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    margin: 40px 0 50px 0;
+    padding: 15px 30px;
+    border: 1px solid white;
+    color: rgb(229, 47, 55);
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 23px 23px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+  }
+  .section-12 .column-price-3 .button-price-3:hover {
+    background-color: rgb(229, 47, 55);
+    color: white;
+  }
+  @keyframes section12 {
+    0% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  

@@ -1,0 +1,123 @@
+.section-7-comments {
+    width: 100%;
+    background-color: #f1faff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-7-comments .left-box-comments {
+    padding-top: 100px;
+  }
+  .section-7-comments .left-box-comments h3 {
+    font-size: 38px;
+    color: #071e55;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 400px;
+  }
+  .section-7-comments .left-box-comments .text-comments-left {
+    font-size: 17px;
+    color: #7c8595;
+    margin-bottom: 20px;
+    max-width: 470px;
+    line-height: 1.4;
+  }
+  .section-7-comments .left-box-comments .assess-comments {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-7-comments .left-box-comments .assess-comments .text-title-assess {
+    margin-bottom: 15px;
+  }
+  .section-7-comments .left-box-comments .assess-comments .comments-trustpilot {
+    font-size: 17px;
+    color: #071e55;
+    font-weight: 600;
+    padding-right: 20px;
+    border-right: 1px solid #7c8595;
+  }
+  .section-7-comments .left-box-comments .assess-comments .comments-trustpilot i {
+    color: #fdcc28;
+  }
+  .section-7-comments .left-box-comments .assess-comments .commments-freefo {
+    font-size: 17px;
+    color: #071e55;
+    font-weight: 600;
+    padding-left: 20px;
+  }
+  .section-7-comments .left-box-comments .assess-comments .commments-freefo i {
+    color: #fdcc28;
+  }
+  .section-7-comments .right-box-commments .people {
+    margin-bottom: 12px;
+    padding: 20px;
+    border-left: 5px solid #27b36a;
+    background-color: white;
+  }
+  .section-7-comments .right-box-commments .say-text {
+    font-size: 18px;
+    padding: 0 25px ;
+    color: #7c8595;
+    font-style: italic;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+  }
+  .section-7-comments .right-box-commments .text-green-comments-right {
+    color: #27b36a;
+    font-weight: 600;
+  }
+  .section-7-comments .right-box-commments .famous-say-1 {
+    width: 540px;
+    height: auto;
+    cursor: pointer;
+  
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .section-7-comments .right-box-commments .famous-say-1 .text-say-1 {
+    margin-left: 80px;
+    padding: 30px;
+  }
+  .section-7-comments .right-box-commments .famous-say-1 img {
+    float: left;
+    margin-right: 15px;
+    max-width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .section-7-comments .right-box-commments .famous-say-2 {
+    width: 540px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .section-7-comments .right-box-commments .famous-say-2 .text-say-2 {
+    margin-left: 80px;
+    padding: 30px;
+  }
+  .section-7-comments .right-box-commments .famous-say-2 img {
+    float: left;
+    max-width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .section-7-comments .right-box-commments .famous-say-3 {
+    width: 540px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .section-7-comments .right-box-commments .famous-say-3 .text-say-3 {
+    margin-left: 80px;
+    padding: 30px;
+  }
+  .section-7-comments .right-box-commments .famous-say-3 img {
+    float: left;
+    margin-right: 15px;
+    max-width: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+  }

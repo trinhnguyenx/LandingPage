@@ -1,0 +1,105 @@
+.section-11 {
+    width: 100%;
+    background-color: white;
+  }
+  .section-11 h3 {
+    font-size: 38px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    color: #071e55;
+    margin-bottom: 10px;
+  }
+  .section-11 .title-peatures {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    color: #7c8595;
+  }
+  .section-11 .menu-features {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    transition: all 1 5s ease;
+    animation: section-11 5s 1 ease;
+  }
+  .section-11 .feature {
+    max-width: 70%;
+    padding-top: 50px;
+    position: relative;
+  }
+  .section-11 .feature h4 {
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    color: #071e55;
+    margin-bottom: 10px;
+  }
+  .section-11 .feature p {
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: #7c8595;
+    margin-bottom: 20px;
+    line-height: 28px;
+  }
+  .section-11 .feature .fa-screwdriver-wrench {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #a9d129;
+    transform: translateX(-150%);
+  }
+  .section-11 .feature .fa-users {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #50a0d2;
+    transform: translateX(-150%);
+  }
+  .section-11 .feature .fa-bell {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #fe9c24;
+    transform: translateX(-150%);
+  }
+  .section-11 .feature .fa-gift {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #3473b8;
+    transform: translateX(-150%);
+  }
+  .section-11 .feature .fa-piggy-bank {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #fc6a3f;
+    transform: translateX(-150%);
+  }
+  .section-11 .feature .fa-comments {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #87ac34;
+    transform: translateX(-150%);
+  }
+  

@@ -1,0 +1,36 @@
+.section-15 {
+    padding: 30px 100px;
+  }
+  .section-15 .menu-section-15 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-15 .menu-section-15 .left-section-15 p {
+    font-size: 17px;
+  }
+  .section-15 .menu-section-15 .left-section-15 span {
+    color: #454545;
+    font-weight: 600;
+  }
+  .section-15 .menu-section-15 .left-section-15 a {
+    color: rgb(229, 47, 55);
+    font-weight: 500;
+  }
+  .section-15 .right-section-15 .right-list-section-15 {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    align-items: center;
+  }
+  .section-15 .right-section-15 .right-text {
+    font-size: 17px;
+    color: #7c8595;
+  }
+  .section-15 .right-section-15 iconify-icon {
+    font-size: 28px;
+  }
+  .section-15 .right-section-15 iconify-icon:hover {
+    color: rgb(229, 47, 55);
+  }
+  

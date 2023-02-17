@@ -1,0 +1,277 @@
+.section-8 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+  }
+  .section-8 h3 {
+    font-size: 38px;
+    font-family: "Nunito", sans-serif;
+    color: #071e55;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .section-8 p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #7c8595;
+  }
+  .section-8 .portfolio {
+    display: flex;
+    transition: all 3s ease;
+    animation: section-8 2s 1 ease;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 {
+    position: relative;
+    transition: all 0.6s ease;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1:hover > .background-overlay-1 > .icon-overlay-1 {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 img {
+    max-width: 100%;
+    height: 100%;
+    padding: 0 0 5px 0;
+    transition: all 0.6s ease;
+  }
+  .portfolio-colomn-1 .img-portfolio-1:hover img {
+    opacity: 0.4;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 .icon-overlay-1 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 .background-overlay-1 {
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgb(229, 47, 55);
+    transition: all ease 0.6s;
+    opacity: 0;
+  }
+  .section-8 .portfolio .portfolio-colomn-1 .img-portfolio-1 .background-overlay-1:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .section-8 .portfolio .img-portfolio-2 {
+    position: relative;
+    transition: all 0.6s ease;
+  }
+  .section-8 .portfolio .img-portfolio-2:hover > .background-overlay-2 > .icon-overlay-2 {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section-8 .portfolio img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 5px 0;
+    transition: all 0.6s ease;
+  }
+  .portfolio-colomn-1 .img-portfolio-2:hover img {
+    opacity: 0.4;
+  }
+  .section-8 .portfolio .icon-overlay-2 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .section-8 .portfolio .background-overlay-2 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 45px;
+    right: 15px;
+    background-color: rgb(229, 47, 55);
+    transition: all ease 0.6s;
+    opacity: 0;
+  }
+  .section-8 .portfolio .background-overlay-2:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .portfolio-colomn-2 .img-portfolio-3 {
+    position: relative;
+    transition: all 0.6s ease;
+  }
+  .portfolio-colomn-2 .img-portfolio-3:hover > .background-overlay-3 > .icon-overlay-3 {
+    opacity: 1;
+  }
+  .portfolio-colomn-2 .img-portfolio-3 img {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    max-height: 924px;
+  }
+  .portfolio-colomn-2 .img-portfolio-3:hover img {
+    opacity: 0.4;
+  }
+  .portfolio-colomn-2 .img-portfolio-3 .icon-overlay-3 {
+    position: absolute;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+  }
+  .portfolio-colomn-2 .img-portfolio-3 .background-overlay-3 {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    bottom: 40px;
+    right: 25px;
+    background-color: rgb(229, 47, 55);
+    transition: all ease 0.3s;
+    opacity: 0;
+  }
+  .portfolio-colomn-2 .img-portfolio-3 .background-overlay-3:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .portfolio-colomn-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-colomn-3 .img-portfolio-4 {
+    position: relative;
+    transition: all 0.6s ease;
+  }
+  .portfolio-colomn-3 .img-portfolio-4:hover > .background-overlay-4 > .icon-overlay-4 {
+    opacity: 1;
+  }
+  .portfolio-colomn-3 .img-portfolio-4 img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 5px 0;
+  }
+  .portfolio-colomn-3 .img-portfolio-4:hover img {
+    opacity: 0.4;
+  }
+  .portfolio-colomn-3 .img-portfolio-4 .icon-overlay-4 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .portfolio-colomn-3 .img-portfolio-4 .background-overlay-4 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 25px;
+    right: 15px;
+    background-color: rgb(229, 47, 55);
+    transition: all ease 0.3s;
+    opacity: 0;
+  }
+  .portfolio-colomn-3 .img-portfolio-4 .background-overlay-4:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .portfolio-colomn-3 .img-portfolio-5 {
+    position: relative;
+    transition: all 0.6s ease;
+  }
+  .portfolio-colomn-3 .img-portfolio-5:hover > .background-overlay-5 > .icon-overlay-5 {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .portfolio-colomn-3 .img-portfolio-5 img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 0 5px 0;
+  }
+  .portfolio-colomn-3 .img-portfolio-5:hover img {
+    opacity: 0.4;
+  }
+  .portfolio-colomn-3 .img-portfolio-5 .icon-overlay-5 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .portfolio-colomn-3 .img-portfolio-5 .background-overlay-5 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 25px;
+    right: 15px;
+    background-color: rgb(229, 47, 55);
+    transition: all ease 0.3s;
+    opacity: 0;
+  }
+  .portfolio-colomn-3 .img-portfolio-5 .background-overlay-5:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .section-8 .preview {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: zoom-out;
+    display: none;
+  }
+  .section-8 .preview .preview-img {
+    margin-bottom: 185px;
+    cursor: pointer;
+  }
+  .section-8 .preview .preview-img img {
+    font-size: 32px;
+    font-weight: 900;
+    color: #b6b6b6;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+  }
+  .section-8 .preview .preview-img .preview-btn:hover {
+    color: white;
+  }
+  
+  @keyframes section-8 {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

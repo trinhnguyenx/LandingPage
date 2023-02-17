@@ -1,0 +1,94 @@
+.section-14 {
+    width: 100%;
+    background: linear-gradient(rgba(229, 47, 55, 0.9), rgba(229, 47, 55, 0.9)), url(./img/section-6-over-delay.jpg);
+  }
+  .section-14 h2 {
+    font-size: 38px;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+  .section-14 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  .section-14 .form-section-14 {
+    text-align: center;
+    padding-top: 50px;
+    transition: all 0.6s ease;
+    animation: apearform 1.5s 1 ease;
+  }
+  .section-14 .form-section-14 ::placeholder {
+    color: white;
+  }
+  .section-14 .form-section-14 input:focus {
+    outline: none;
+    color: white;
+  }
+  .section-14 .form-section-14 select:focus {
+    color: black;
+  }
+  .section-14 .form-yourname input {
+    padding: 15px 100px 15px 15px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    border: 2px solid #fff;
+    background-color: rgb(229, 47, 55);
+    font-size: 16px;
+    border-radius: 5px 5px;
+  }
+  .section-14 .form-email input {
+    padding: 15px 100px 15px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    background-color: rgb(229, 47, 55);
+    font-size: 16px;
+    border-radius: 5px 5px;
+  }
+  .section-14 .form-phone input {
+    padding: 15px 100px 15px 15px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+    border: 2px solid #fff;
+    background-color: rgb(229, 47, 55);
+    font-size: 16px;
+    border-radius: 5px 5px;
+  }
+  .section-14 .form-choose select {
+    padding: 15px 165px 15px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    background-color: rgb(229, 47, 55);
+    font-size: 16px;
+    border-radius: 5px 5px;
+    color: white;
+    outline: none;
+  }
+  .section-14 .form-choose select option {
+    background-color: white;
+  }
+  .section-14 .form-message input {
+    padding: 15px 443px 120px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    background-color: rgb(229, 47, 55);
+    font-size: 16px;
+    border-radius: 5px 5px;
+  }
+  .section-14 .btn-submit-section-14 input {
+    padding: 20px 80px;
+    color: rgb(229, 47, 55);
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 3px 3px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+  }
+  .section-14 .btn-submit-section-14 input:hover {
+    background-color: #eaeaea;
+  }

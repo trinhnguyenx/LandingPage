@@ -1,0 +1,120 @@
+.section-5-profile  {
+    width: 100%;
+    background-color: #f1faff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-5-profile .menu-profile-left {
+    padding-right: 60px;
+  }
+  .section-5-profile .blue-profile {
+    display: flex;
+    margin-bottom: 14px;
+    position: relative;
+    transition: all 0.7s ease;
+    cursor: pointer;
+  }
+  .section-5-profile .blue-profile span {
+    position: absolute;
+    text-align: center;
+    color: #1e90ff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #7c8595;
+    font-size: 40px;
+    transform: translateY(20px);
+    margin-left: 20px;
+  }
+  .section-5-profile .blue-profile .icon-blue-profile {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-5-profile .pink-profile {
+    display: flex;
+    margin-bottom: 14px;
+    position: relative;
+    transition: all 0.7s ease;
+    cursor: pointer;
+  }
+  .section-5-profile .pink-profile span {
+    position: absolute;
+    text-align: center;
+    color: rgb(229, 47, 55);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #7c8595;
+    font-size: 40px;
+    transform: translateY(20px);
+    margin-left: 20px;
+  }
+  .section-5-profile .pink-profile .fa-network-wired {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-5-profile .pink-profile:hover {
+    background-color: white;
+  }
+  .section-5-profile .green-profile {
+    display: flex;
+    margin-bottom: 14px;
+    position: relative;
+    transition: all 0.7s ease;
+    cursor: pointer;
+  }
+  .section-5-profile .green-profile span {
+    position: absolute;
+    text-align: center;
+    color: #27b36a;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #7c8595;
+    font-size: 40px;
+    transform: translateY(20px);
+    margin-left: 20px;
+  }
+  .section-5-profile .green-profile .fa-rocket {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section-5-profile .green-profile:hover {
+    background-color: white;
+  }
+  .section-5-profile .title-profile-left {
+    margin-left: 120px;
+  }
+  .section-5-profile .title-profile-left h3 {
+    font-size: 21px;
+    font-family: "Nunito", sans-serif;
+    color: #071e55;
+    padding-top: 12px;
+  }
+  .section-5-profile .title-profile-left p {
+    font-size: 17px;
+    color: #7c8595;
+    padding-top: 12px;
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
+  .section-5-profile .img-profile-right img {
+    width: 100%;
+    background-size: cover;
+    margin-left: 10px;
+    border-radius: 8px 8px;
+    box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,24 @@
+.logo-partners {
+    padding: 40px 20px;
+  }
+  
+  .row-logo-partners {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-partners .row-logo-partners .partners {
+    max-height: 55px;
+    color: #7c8595;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+  }
+  .logo-partners .row-logo-partners .partners:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  .logo-partners .row-logo-partners .text-partner {
+    font-size: 18px;
+    font-weight: 500;
+  }

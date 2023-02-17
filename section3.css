@@ -1,0 +1,83 @@
+.section-3 {
+    width: 100%;
+    background-color: #f1faff;
+    margin: auto;
+  }
+  .section-3 .section-3-title {
+    text-align: center;
+    padding-top: 80px;
+  }
+  .section-3 .section-3-title h3 {
+    font-size: 38px;
+  }
+  .section-3 .section-3-title p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #7c8595;
+  }
+  .section-3 .main-service {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  .section-3 .main-service .blue-service {
+    text-align: center;
+    max-width: 300px;
+    transition: all 0.8s ease;
+  }
+  .section-3 .main-service .blue-service .fa-chart-bar {
+    padding: 16px;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 20px;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .section-3 .main-service .blue-service:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .section-3 .main-service .pink-service {
+    text-align: center;
+    max-width: 300px;
+    transition: all 0.8s ease;
+  }
+  .section-3 .main-service .pink-service .fa-heart {
+    padding: 16px;
+    margin-bottom: 15px;
+    background-color: rgb(229, 47, 55);
+    color: white;
+    border-radius: 20px;
+    font-size: 40px;
+  }
+  .section-3 .main-service .pink-service:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .section-3 .main-service .green-service {
+    text-align: center;
+    max-width: 300px;
+    transition: all 0.8s ease;
+  }
+  .section-3 .main-service .green-service .fa-anchor {
+    margin-bottom: 15px;
+    padding: 16px;
+    background-color: #27b36a;
+    color: white;
+    border-radius: 20px;
+    font-size: 40px;
+  }
+  .section-3 .main-service .green-service:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  .section-3 .main-service .large-text-service {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .section-3 .main-service .small-text-service {
+    font-size: 17px;
+    color: #7c8595;
+  }
